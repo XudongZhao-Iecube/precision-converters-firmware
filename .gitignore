@@ -1,0 +1,14 @@
+*.swp
+*.profile*
+mbed-os
+app/mbed_platform_drivers
+app/no-OS
+app/libtinyiiod
+Visual*
+Code*
+.gitattributes
+.vs/
+*.sln
+*.vgdbproj
+*.TMP
+*.user
