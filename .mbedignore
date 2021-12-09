@@ -1,3 +1,6 @@
-#ad3552r_mbed_iio-application/
-ad7124_mbed_temperature-measure-example/
-#ad7606_mbed_iio-application/
+// To select the project of choice, use //. Rest of the projects are ignored
+// e.g. // adxxxx will select adxxxx project and ignore others
+
+ad3552r_mbed_iio-application/
+//ad7124_mbed_temperature-measure-example/
+ad7606_mbed_iio-application/
