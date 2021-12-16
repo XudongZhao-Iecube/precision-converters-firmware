@@ -1,9 +1,9 @@
-// To select the project of choice, use //. Rest of the projects are ignored
-// e.g. // adxxxx will select adxxxx project and ignore others
+* To select the project of choice, use //. Rest of the projects are ignored
+* e.g. // adxxxx will select adxxxx project and ignore others
 
-ad3552r_mbed_iio-application/
 //ad7124_mbed_temperature-measure-example/
+ad3552r_mbed_iio-application/
 ad7606_mbed_iio-application/
 
-// Ignore adi_libs folder for mbed as libraries are deployed through .lib files
+* Ignore adi_libs folder for mbed as libraries are deployed through .lib files
 libs/adi_libs

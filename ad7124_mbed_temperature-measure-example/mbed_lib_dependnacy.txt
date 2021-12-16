@@ -1,0 +1,18 @@
+Create below new files into project and add specified contents into them:
+*Note: Make sure these files are present in other project folder at a same
+time as this would duplicate the library content
+
+1) adi_console_menu.lib
+https://os.mbed.com/teams/AnalogDevices/code/adi_console_menu/#ced4fa6875ed 
+
+2) mbed_platform_drivers.lib
+https://os.mbed.com/teams/AnalogDevices/code/platform_drivers/#af1f2416dd26
+
+3) no-OS.lib
+https://github.com/analogdevicesinc/no-OS/#d14f824a6bee78881a277790310b12d9a3e822bd
+
+4) tempsensors.lib:
+https://os.mbed.com/teams/AnalogDevices/code/tempsensors/#d8246c20aed2
+
+Clean-build the project after adding library dependnacy
+ 
