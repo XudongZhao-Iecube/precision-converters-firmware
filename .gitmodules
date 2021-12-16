@@ -1,6 +1,3 @@
-[submodule "no-OS"]
-	path = no-OS
-	url = https://github.com/analogdevicesinc/no-OS
 [submodule "libs/adi_libs/no-OS"]
 	path = libs/adi_libs/no-OS
 	url = https://github.com/analogdevicesinc/no-OS/
