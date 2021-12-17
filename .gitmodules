@@ -1,6 +1,8 @@
-[submodule "libs/adi_libs/no-OS"]
-	path = libs/adi_libs/no-OS
+[submodule "libs/no-OS"]
+	path = libs/no-OS
 	url = https://github.com/analogdevicesinc/no-OS/
-[submodule "libs/adi_libs/libtinyiiod"]
-	path = libs/adi_libs/libtinyiiod
+	branch = master
+[submodule "libs/libtinyiiod"]
+	path = libs/libtinyiiod
 	url = https://github.com/analogdevicesinc/libtinyiiod
+	branch = master
