@@ -1,0 +1,6 @@
+[submodule "libs/no-OS"]
+	path = libs/no-OS
+	url = https://github.com/analogdevicesinc/no-OS
+[submodule "libs/libtinyiiod"]
+	path = libs/libtinyiiod
+	url = https://github.com/analogdevicesinc/libtinyiiod
