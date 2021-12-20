@@ -28,13 +28,15 @@ Typical instructions to update the library dependnacy are given below:
 Step 1: Create new ".lib" files into a project folder and add specified contents into them:
 *Note: Make sure these files are not present in other project folder at a same time as this would duplicate the library content and increase your storage space.
 
+```
 File: mbed_platform_drivers.lib
-
 Content: https://os.mbed.com/teams/AnalogDevices/code/platform_drivers/#your_commit_id
+```
 
+```
 File: no-OS.lib
-
 Content: https://github.com/analogdevicesinc/no-OS/#your_commit_id
+```
 
 ![image](https://user-images.githubusercontent.com/62383520/146760556-f222d81e-ef5f-46e8-8219-e4545e8fc862.png)
 
@@ -43,4 +45,5 @@ Step 2: Clean-build the project after adding library dependnacy
 ![image](https://user-images.githubusercontent.com/62383520/146761476-85d5a8f5-2b75-426e-918e-f235ad460b1f.png)
 
 
-
+## Building for Mbed platform
+Refer STM32_build.md for building the project for mbed platform: https://github.com/mphalke/precision-converters-firmware/blob/main/STM32_build.md
