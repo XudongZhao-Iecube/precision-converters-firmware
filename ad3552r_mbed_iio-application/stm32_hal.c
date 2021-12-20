@@ -3,8 +3,9 @@
 #include "gpio.h"
 #include "stm32_gpio.h"
 #include "irq.h"
-#include "stm32_irq.h"
+//#include "stm32_irq.h"
 
+#if 0
 int32_t spi_init(struct spi_desc **desc,
 		 const struct spi_init_param *param)
 {
@@ -77,7 +78,6 @@ int32_t gpio_get_value(struct gpio_desc *desc,
 	return stm32_gpio_get_value(desc, value);
 }
 
-#if 0
 /* Initialize a interrupt controller peripheral. */
 int32_t irq_ctrl_init(struct irq_ctrl_desc **desc,
 		      const struct irq_init_param *param)

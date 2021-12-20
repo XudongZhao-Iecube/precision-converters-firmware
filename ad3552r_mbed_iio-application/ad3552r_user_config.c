@@ -26,15 +26,18 @@
 /******************** Variables and User Defined Data Types *******************/
 /******************************************************************************/
 
+#if 0
 /* LDAC GPIO init parameters */
 struct gpio_init_param ldac_gpio_init_param = {
 	.number = LDAC_GPIO,
 	.platform_ops = NULL,
 	.extra = NULL
 };
+#endif
 
 /* AD3552R No-OS driver init parameters */
 struct ad3552r_init_param ad3552r_init_params = {
+#if 0
 	.spi_param = {
 		.max_speed_hz = 10000000,
 		.mode = SPI_MODE_0,
@@ -42,4 +45,5 @@ struct ad3552r_init_param ad3552r_init_params = {
 		.extra = &spi_extra_init_params
 	},
 	.ldac_param = &ldac_gpio_init_param
+#endif
 };

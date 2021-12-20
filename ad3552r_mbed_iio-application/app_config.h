@@ -15,9 +15,10 @@
 
 /* List of supported platforms*/
 #define	MBED_PLATFORM		1
+#define	STM32_PLATFORM		2
 
 /* Select the active platform */
-#define ACTIVE_PLATFORM		MBED_PLATFORM
+#define ACTIVE_PLATFORM		STM32_PLATFORM
 
 /******************************************************************************/
 /***************************** Include Files **********************************/
@@ -31,18 +32,24 @@
 
 #define IIO_DEVICE_NAME	"ad3552r"
 
-#if (ACTIVE_PLATFORM == MBED_PLATFORM)
-#include "app_config_mbed.h"
+#if (ACTIVE_PLATFORM == STM32_PLATFORM)
+#include "app_config_stm32.h"
 
-/* Used to form a VCOM serial number */
-#define	FIRMWARE_NAME	"ad3552r_mbed_iio_application"
+/* Redefine the init params structure mapping w.r.t. platform */
+#define uart_extra_init_params stm32_uart_extra_init_params
+#define spi_extra_init_params stm32_spi_extra_init_params
+#else
+#define ACTIVE_PLATFORM 	MBED_PLATFORM
+#include "app_config_mbed.h"
 
 /* Redefine the init params structure mapping w.r.t. platform */
 #define uart_extra_init_params mbed_uart_extra_init_params
 #define spi_extra_init_params mbed_spi_extra_init_params
-#else
-#error "No/Invalid active platform selected"
+#warning "No/Invalid active platform selected. Using Mbed as default"
 #endif
+
+/* Used to form a VCOM serial number */
+#define	FIRMWARE_NAME	"ad3552r_iio_application"
 
 /****** Macros used to form a VCOM serial number ******/
 #if !defined(DEVICE_NAME)
