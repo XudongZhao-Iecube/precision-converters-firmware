@@ -62,3 +62,7 @@ libtinyiiod/ci/
 libtinyiiod/example.c
 mbed_platform_drivers/adc_data_capture.c
 mbed_platform_drivers/adc_data_capture.h
+app_config_stm32.c
+app_config_stm32.h
+stm32_hal.c
+stm32_hal.h
