@@ -1,5 +1,25 @@
 # STM32 Project Creation and Building Guide
 
+## Checking out the repository
+Run below command to checkout the git repository and all dependancy:
+
+```
+git clone --recursive https://github.com/mphalke/precision-converters-firmware
+cd precision-converters-firmware
+```
+
+## Updating library dependnacy
+Update the commit ID of ADI dependent libraries (whicheve applicables) for respective target firmware application
+
+```
+cd libs/no-OS
+git checkout your_commit_id
+cd libs/libtinyiiod
+git checkout your_commit_id
+```
+
+Refer the 'stm32_library_dependancy' file from respective target application folder to know the specific commit ID for each library
+
 ## Create a new STM32 project from existing .ioc file:
 
   **Step 1: Open STM32CubeIDE and select File->New->STM32 Project From Existing STM32CubeMX Configuration File (.ioc)**
