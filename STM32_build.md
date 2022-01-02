@@ -57,7 +57,7 @@ user need to override the automatically generate Makefile setting from STM32Cube
 3. Link the files and folder manually for editing application source code (optional)
    If you wish to modify the application code from IDE, manually link the source files and library folders by dragging and dropping into IDE project
 
-   <img src="https://user-images.githubusercontent.com/62383520/146766695-e0486b00-1d98-4d57-9de4-f466d055f721.png" width="400">
+   <img src="https://user-images.githubusercontent.com/62383520/147868143-15778e48-7139-4ac8-af0c-b5d3cc34ba67.png" width="400">
 
    <img src="https://user-images.githubusercontent.com/62383520/147868063-b7f07b93-bcbd-47ae-9c17-6d1d3444f31a.png" width="400">
 
