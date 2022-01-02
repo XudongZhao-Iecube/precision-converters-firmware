@@ -19,13 +19,14 @@ The firmware projects/applications have dependancies on the the other ADI librar
 which points to a specific commit ID on the github repository. As these libraries are maintained seperately, the firmware application must point to a specific
 version/commit ID of those by refering through 'library_dependnacy.md' file.
 
-****Note: The library names and content information is available in the "library_dependnacy.md" file from respective project folders.***
+*Note: The library names and content information is available in the "library_dependnacy.md" file from respective project folders.*
 
 Typical instructions to add the library dependancy for Mbed platform are given below:
 
-Step 1: Create new ".lib" files into a project folder and add specified contents into them:
+Step 1: Create new ".lib" files into a project folder and add specified contents into them. To create a new file, right click on project folder and select
+'New File' option
 
-****Note: Make sure these files are not present in other project folder at a same time as this would duplicate the library content and increase your storage space.***
+*Note: Make sure these files are not present in other project folder at a same time as this would duplicate the library content and increase your storage space.*
 
 ```
 File: mbed_platform_drivers.lib
@@ -34,6 +35,13 @@ Content: https://os.mbed.com/teams/AnalogDevices/code/platform_drivers/#your_com
 
 <img src="https://user-images.githubusercontent.com/62383520/146760556-f222d81e-ef5f-46e8-8219-e4545e8fc862.png" width="1200">
 
+Step 2:  Fix library issues by clicking on exclamatory mark option in Mbed Libraries tab at the bottom explorer bar
+
+<img src="https://user-images.githubusercontent.com/62383520/147882990-48fa0e20-45f5-4e82-9f19-9d35094e3605.png" width="600">
+
 Step 2: Clean-build the project after adding library dependancy
 
-<img src="https://user-images.githubusercontent.com/62383520/146761476-85d5a8f5-2b75-426e-918e-f235ad460b1f.png" width="800">
+<img src="https://user-images.githubusercontent.com/62383520/147882857-c35d5099-4073-4cde-9902-c0abeecbdd1f.png" width="400">
+
+Successful build should generate the binary file which can be copied (or dragged and dopped) into SDP-K1 (or selected target device) USB hosted drive.
+Reference: https://os.mbed.com/platforms/SDP_K1/
