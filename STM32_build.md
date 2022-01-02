@@ -69,15 +69,16 @@ user need to override the automatically generate Makefile setting from STM32Cube
 1. Right click on the project and select 'Debug As -> Debug Configurations..." option.
 2. Create a new debug configuration as shown below:
 
-   <img src="https://user-images.githubusercontent.com/62383520/147872452-0063b8e3-aba6-4492-a5c2-21a2939fde70.png" width="200">
+   <img src="https://user-images.githubusercontent.com/62383520/147872452-0063b8e3-aba6-4492-a5c2-21a2939fde70.png" width="400">
    
-   <img src="https://user-images.githubusercontent.com/62383520/147872501-06bdd8ea-d8f9-4696-8f47-2b8fcfef19f1.png" width="200">
+   <img src="https://user-images.githubusercontent.com/62383520/147872501-06bdd8ea-d8f9-4696-8f47-2b8fcfef19f1.png" width="400">
    
-    <img src="https://user-images.githubusercontent.com/62383520/147872536-88ffa2a6-f5eb-43e4-ad24-d5b5cfb4b823.png" width="200">
+    <img src="https://user-images.githubusercontent.com/62383520/147872536-88ffa2a6-f5eb-43e4-ad24-d5b5cfb4b823.png" width="400">
     
 3. Apply the settings and click on debug button to start the debugging.
 
 
 ## Using Command Line to Build the Project
 Type command 'make' on command line window (e.g. command prompt, git bash, etc) to build the project.
+
 To clean build the project, type command 'make clean' followed by 'make.
