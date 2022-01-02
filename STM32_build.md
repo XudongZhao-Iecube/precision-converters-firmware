@@ -21,41 +21,47 @@ git checkout your_commit_id
 Refer the 'library_dependancy.txt' file from respective target application folder to know the specific commit ID for each library
 
 
-## Create a new STM32 project from existing .ioc file:
+## Create a new STM32 Makefile project from existing .ioc file:
 
-  **`Step 1: Open STM32CubeIDE and select File->New->STM32 Project From Existing STM32CubeMX Configuration File (.ioc)`**
-  
-  <img src="https://user-images.githubusercontent.com/62383520/146762834-535c327e-03e2-4d07-9881-a035e2dd2141.png" width="600">
+  **`Step 1: Open STM32CubeMX and select File->Load Project... `**
+
+  <img src="https://user-images.githubusercontent.com/62383520/147866801-8242e48c-a78b-43cd-bfb0-82f77374ac0c.png" width="600">
   
   ----------------------------------------------------------------------------------------
   
-  **`Step 2: Select the .ioc file and project location`**
+  **`Step 2: Select the STM32CubeIDE as default Toolchain/IDE. Rest of the configurations should be taken from pre-generated .ioc file `**
   
-  <img src="https://user-images.githubusercontent.com/62383520/146764489-e1c6da05-5b00-4a51-9cc4-151b27a31b85.png" width="600">
+  <img src="https://user-images.githubusercontent.com/62383520/147866926-8773b4d5-c1a7-44d2-9cc9-e350f7eb7aa6.png" width="600">
   
    ----------------------------------------------------------------------------------------
    
-   **`Step 3: Select the firmware package and version`**
-   
-  <img src="https://user-images.githubusercontent.com/62383520/146764312-2d1a8b35-96ff-4942-8b8a-ee6c4e428544.png" width="400">
+   **`Step 3: Click on 'GENERATE CODE' button on the top right corner to generate the STM32 device specific code`**
+
+  <img src="https://user-images.githubusercontent.com/62383520/147867048-33c7660b-1818-4aa5-81f0-35b2deee6d35.png" width="400">
   
    ----------------------------------------------------------------------------------------
 
 
-## Adding linked resources into build system:
-The target application source files are externally linked to a STM32 project using .extSettings file. By default these files are not added into a build
-system for compilation. In order to build these files, perform below setting:
+## Updating the project settings:
+By default, the STM32Cube IDE project generates the Makefile automatically which is used to build/compile the project.
+The application specific source and header files are not manually included into the project settings due to complexity in doing that
+and also there dependancy on the specific application. The source and header files are therefore included from pre-generated 'Makefile'
+which is present in the same folder where .ioc file is present. This Makefile should be used to build the STM32 project and so
+user need to override the automatically generate Makefile setting from STM32CubeIDE.
 
 1. Right click on project and select properties
-2. Expand the C/C++ General and select Paths and Symbols option
+2. Select the C/C++ Build option and unselect the 'Generate Makefiles Automatically' checkbox
 
-  <img src="https://user-images.githubusercontent.com/62383520/146765826-8fd9591e-fab9-4c65-9582-baedeae7800e.png" width="400">
+  <img src="https://user-images.githubusercontent.com/62383520/147867904-77b45244-b002-4231-9685-e5a10d66f8c8.png" width="400">
   
-3. Add the externally linked folder into build system 
+3. Link the files and folder manually for editing application source code (optional)
+   If you wish to modify the application code from IDE, manually link the source files and library folders by dragging and dropping into IDE project
 
-  <img src="https://user-images.githubusercontent.com/62383520/146766695-e0486b00-1d98-4d57-9de4-f466d055f721.png" width="400">
+   <img src="https://user-images.githubusercontent.com/62383520/146766695-e0486b00-1d98-4d57-9de4-f466d055f721.png" width="400">
 
-4. Apply the settings and close the tab
+   <img src="https://user-images.githubusercontent.com/62383520/147868063-b7f07b93-bcbd-47ae-9c17-6d1d3444f31a.png" width="400">
+
+4. Now build the project.
 
 
 
