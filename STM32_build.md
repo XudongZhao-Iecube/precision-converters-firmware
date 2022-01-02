@@ -1,7 +1,7 @@
 # STM32 Project Build Guide
 
 ## Checking Out the Project Repository
-Run below commands to checkout the git repository and all dependancies (submodules) into local drive of your computer:
+Run below commands to checkout the Precision Converters github repository and all dependancies (submodules) into local drive of your computer:
 
 ```
 git clone --recursive https://github.com/mphalke/precision-converters-firmware
@@ -12,13 +12,13 @@ cd precision-converters-firmware
 ## Updating Library Dependancy
 Update the commit ID of ADI library repositories (whichever applicables) for respective target firmware application.
 
-*Refer the 'library_dependancy.txt' file from respective project folder to know the specific commit ID for each library*
+*Note: Refer the 'library_dependancy.txt' file from respective project folder to know the specific commit ID for each library*
 
 ```
 cd libs/no-OS
-git checkout your_commit_id
+git checkout #your_commit_id
 cd libs/libtinyiiod
-git checkout your_commit_id
+git checkout #your_commit_id
 ```
 
 
