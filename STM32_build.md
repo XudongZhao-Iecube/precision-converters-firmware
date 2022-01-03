@@ -12,7 +12,7 @@ cd precision-converters-firmware
 ## Updating Library Dependancy
 Update the commit ID of ADI library repositories (whichever applicables) for respective target firmware application.
 
-*Note: Refer the 'library_dependancy.txt' file from respective project folder to know the specific commit ID for each library*
+*Note: Refer the '[library_dependancy.md](https://github.com/mphalke/precision-converters-firmware/blob/main/library_dependancy.md)' file to know the specific commit ID of each library for your project*
 
 ```
 cd libs/no-OS
