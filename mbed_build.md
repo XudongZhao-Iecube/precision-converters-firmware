@@ -17,9 +17,9 @@ Select "File->Import Project.." option
 ## Adding Library Dependancy
 The firmware projects/applications have dependancies on the the other ADI libraries. These libraries are imported by Mbed build system using .lib files, 
 which points to a specific commit ID on the github repository. As these libraries are maintained seperately, the firmware application must point to a specific
-version/commit ID of those by refering through 'library_dependnacy.md' file.
+version/commit ID of those by refering through '[library_dependnacy.md](https://github.com/mphalke/precision-converters-firmware/blob/main/library_dependancy.md)' file.
 
-*Note: The library names and content information is available in the "library_dependnacy.md" file from respective project folders.*
+*Note: The library names and content information is available in the "[library_dependnacy.md](https://github.com/mphalke/precision-converters-firmware/blob/main/library_dependancy.md)" file from respective project folders.*
 
 Typical instructions to add the library dependancy for Mbed platform are given below:
 
